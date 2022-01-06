@@ -407,6 +407,7 @@ footer .container .Help h4 {
     color: rgb(200, 161, 228);
     transition: 0.5s;
     font-family: cursive;
+    line-height: 2;
 
   
 }

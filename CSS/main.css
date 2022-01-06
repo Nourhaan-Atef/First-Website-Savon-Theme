@@ -23,6 +23,20 @@ header .container .logo {
     cursor: pointer;
 }
 
+.navbar-light .navbar-nav .nav-link{
+    color: #222;
+    font-size: 22px;
+    font-family: cursive;
+}
+.navbar-light .navbar-nav .nav-link:hover{
+    color: rgb(158, 97, 160);
+
+}
+.navbar-light .navbar-nav .nav-link .icon{
+    font-size: 20px;
+    color: #777;
+
+}
 
 /* End Header */
 
@@ -373,6 +387,7 @@ h2 {
 footer {
     background-color: #333;
     color: white;
+    font-family: cursive;
 }
 
 footer .container ul li a {

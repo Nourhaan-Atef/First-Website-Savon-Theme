@@ -18,25 +18,55 @@
 <body>
     <!-- Start header -->
     <header>
-        <div class="container d-flex flex-row justify-content-between mt-3 mb-3">
-            <img src="images/savanaLogo.png" alt="Savana" class="logo" width="120px" height="30px">
-            <div class="links d-flex">
-                <a href="#home" class="link p-2 text-decoration-none font-weight-bold" id="Home">Home</a>
-                <div class="dropdown">
-                    <a class="link btn font-weight-bold  dropdown" href="#" id="dropdownMenuLink" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
-                    Pages
+       
+    <nav class="navbar navbar-expand-lg navbar-light ">
+        <a class="navbar-brand" href="#">
+            <img src="Images/savanaLogo.png" height="50px" alt="LOGO">
+        </a>
+        <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+        <span class="navbar-toggler-icon"></span>
+    </button>
+
+        <div class="collapse navbar-collapse" id="navbarSupportedContent">
+            <ul class="navbar-nav m-auto">
+                <li class="nav-item active">
+                    <a class="nav-link" href="#">Home <span class="sr-only">(current)</span></a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="#">Page</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="#">Categories</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="#">Contacts</a>
+                </li>
+              
+            </ul>
+            <ul class="navbar-nav flex-row">
+
+                <li class="nav-item  mr-4 ">
+                    <a class="nav-link" href="#">
+                        <span class="icon"><i class="fas fa-search"></i></span>
                     </a>
-                    <div class="dropdown-menu" aria-labelledby="dropdownMenuLink">
-                        <a class="dropdown-item" href="#about">About</a>
-                        <a class="dropdown-item" href="#" id="faq">FAQ</a>
-                    </div>
-                </div>
-                <a href="#categories" class="link p-2 text-decoration-none font-weight-bold">Categories</a>
-                <a href="#contacts" class="link p-2 text-decoration-none font-weight-bold ">Contacts</a>
-                <i class="fas fa-user p-2 mt-1 "></i>
-                <i class="fas fa-shopping-cart p-2 mt-1"></i>
-            </div>
+                </li>
+
+                <li class="nav-item  mr-4">
+                    <a class="nav-link" href="#">
+                        <span class="icon"><i class="far fa-user "></i></span>
+                    </a>
+                </li>
+
+                <li class="nav-item  mr-4">
+                    <a class="nav-link" href="#">
+                        <span class="icon"><i class="fas fa-shopping-bag"></i></span>
+                    </a>
+                </li>
+
+            </ul>
         </div>
+    </nav>
+
     </header>
     <!-- End header -->
     <!-- Start landing -->

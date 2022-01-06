@@ -13,7 +13,6 @@ body {
     margin: 0;
 }
 
-
 /* Start Header and landing*/
 
 
@@ -26,6 +25,7 @@ header .container .logo {
 .navbar-light .navbar-nav .nav-link{
     color: #222;
     font-size: 22px;
+    font-weight: bold;
     font-family: cursive;
 }
 .navbar-light .navbar-nav .nav-link:hover{
@@ -57,12 +57,15 @@ i:hover {
     left: 50%;
     transform: translate(-50%, -50%);
     width: 500px;
+    
+
 }
 
 h2 {
     font-size: 50px;
     font-weight: bold;
     letter-spacing: 3px;
+    font-family: cursive;
 }
 
 .caption-1 div a,
@@ -71,9 +74,11 @@ h2 {
     text-decoration: none;
     font-size: 18px;
     font-weight: bold;
-    color: gray;
-    padding-left: 30px;
-    padding-top: 100px;
+    color: white;
+    padding:5px 30px;
+    background-color: rgb(158, 97, 160);
+    border-radius: 10px;
+
 }
 
 .caption-2 {
@@ -98,37 +103,6 @@ h2 {
 .caption-2 div,
 .caption-3 div {
     margin-top: 40px;
-}
-
-.caption-1 div a:first-child::before,
-.caption-2 div a:first-child::before,
-.caption-3 div a:first-child::before {
-    content: "";
-    position: absolute;
-    border-bottom: 2px rgb(87, 85, 85) solid;
-    bottom: 0px;
-    width: 80px;
-    height: 1px;
-}
-
-.caption-1 div a:nth-child(2)::before,
-.caption-2 div a:nth-child(2)::before,
-.caption-3 div a:nth-child(2)::before {
-    content: "";
-    position: absolute;
-    border-bottom: 2px rgb(87, 85, 85) solid;
-    bottom: 0px;
-    width: 100px;
-    height: 1px;
-}
-
-.caption-1 div a:nth-child(2):hover,
-.caption-2 div a:nth-child(2):hover,
-.caption-3 div a:nth-child(2):hover,
-.caption-1 div a:first-child:hover,
-.caption-2 div a:first-child:hover,
-.caption-3 div a:first-child:hover {
-    color: rgb(39, 39, 39);
 }
 
 .landing {
@@ -208,6 +182,12 @@ h2 {
 .secand-page .container .icons img:hover {
     transform: translate(0px, -10px)
 }
+.secand-page h4{
+    font-family: cursive;
+}
+.secand-page h3{
+    font-family: cursive;
+}
 
 
 /* Small */
@@ -254,6 +234,10 @@ h2 {
     margin-bottom: 50px;
 }
 
+.products h3.head{
+    font-family: cursive;
+
+}
 .products .container .head {
     letter-spacing: 5px;
     font-size: 40px;
@@ -285,6 +269,7 @@ h2 {
     font-weight: bold;
     color: white;
     cursor: pointer;
+    
 }
 
 .third-page .row h4 {
@@ -387,7 +372,6 @@ h2 {
 footer {
     background-color: #333;
     color: white;
-    font-family: cursive;
 }
 
 footer .container ul li a {
@@ -413,6 +397,7 @@ footer .container .Help {
     display: flex;
     flex-direction: column;
     justify-content: center;
+    line-height: 2;
 }
 
 footer .container .about h4,
@@ -421,6 +406,9 @@ footer .container .Support h4,
 footer .container .Help h4 {
     color: rgb(200, 161, 228);
     transition: 0.5s;
+    font-family: cursive;
+
+  
 }
 
 footer .container .about h4:hover,

@@ -1,0 +1,447 @@
+* {
+    -webkit-box-sizing: border-box;
+    -moz-box-sizing: border-box;
+    box-sizing: border-box;
+}
+
+html {
+    scroll-behavior: smooth;
+}
+
+body {
+    padding: 0;
+    margin: 0;
+}
+
+
+/* Start Header and landing*/
+
+
+/* Start Header */
+
+header .container .logo {
+    cursor: pointer;
+}
+
+
+/* End Header */
+
+a.link {
+    color: black;
+}
+
+a.link:hover,
+i:hover {
+    color: rgb(158, 97, 160);
+    cursor: pointer;
+}
+
+.caption-1 {
+    position: absolute;
+    text-align: center;
+    top: 60%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    width: 500px;
+}
+
+h2 {
+    font-size: 50px;
+    font-weight: bold;
+    letter-spacing: 3px;
+}
+
+.caption-1 div a,
+.caption-2 div a,
+.caption-3 div a {
+    text-decoration: none;
+    font-size: 18px;
+    font-weight: bold;
+    color: gray;
+    padding-left: 30px;
+    padding-top: 100px;
+}
+
+.caption-2 {
+    position: absolute;
+    text-align: center;
+    top: 50%;
+    left: 30%;
+    transform: translate(-50%, -50%);
+    width: 600px;
+}
+
+.caption-3 {
+    position: absolute;
+    text-align: center;
+    top: 60%;
+    left: 65%;
+    transform: translate(-50%, -50%);
+    width: 600px;
+}
+
+.caption-1 div,
+.caption-2 div,
+.caption-3 div {
+    margin-top: 40px;
+}
+
+.caption-1 div a:first-child::before,
+.caption-2 div a:first-child::before,
+.caption-3 div a:first-child::before {
+    content: "";
+    position: absolute;
+    border-bottom: 2px rgb(87, 85, 85) solid;
+    bottom: 0px;
+    width: 80px;
+    height: 1px;
+}
+
+.caption-1 div a:nth-child(2)::before,
+.caption-2 div a:nth-child(2)::before,
+.caption-3 div a:nth-child(2)::before {
+    content: "";
+    position: absolute;
+    border-bottom: 2px rgb(87, 85, 85) solid;
+    bottom: 0px;
+    width: 100px;
+    height: 1px;
+}
+
+.caption-1 div a:nth-child(2):hover,
+.caption-2 div a:nth-child(2):hover,
+.caption-3 div a:nth-child(2):hover,
+.caption-1 div a:first-child:hover,
+.caption-2 div a:first-child:hover,
+.caption-3 div a:first-child:hover {
+    color: rgb(39, 39, 39);
+}
+
+.landing {
+    display: none;
+}
+
+@media(max-width:776px) {
+    #carouselExampleControls {
+        display: none;
+    }
+    header .container {
+        display: flex;
+        flex-direction: column;
+        flex-wrap: wrap;
+        justify-content: space-between;
+        align-items: center;
+    }
+    .logo {
+        width: 80px;
+        height: 30px;
+        margin: 20px;
+    }
+    .link {
+        padding: 5px;
+        padding-top: 10px;
+    }
+    .landing {
+        width: 100%;
+        height: 100vh;
+        background-image: url("../images/secand.jpeg");
+        background-size: cover;
+        background-repeat: no-repeat;
+        display: flex;
+        flex-direction: column;
+        justify-content: space-evenly;
+        align-items: center;
+    }
+    h2 {
+        font-size: 50px;
+        font-weight: bold;
+        letter-spacing: 3px;
+        color: rgb(65, 63, 63);
+    }
+    .landing div a {
+        text-decoration: none;
+        font-size: 20px;
+        font-weight: bold;
+        color: white;
+        padding-left: 30px;
+        padding-right: 30px;
+        margin-left: 10px;
+        background-color: rgb(158, 97, 160);
+        border-radius: 10px;
+    }
+}
+
+
+/* End Header and landing */
+
+
+/* Start Secand page */
+
+.secand-page {
+    width: 100%;
+    background-color: rgb(238, 235, 235);
+}
+
+.secand-page container .icons p {
+    width: 200px;
+}
+
+.secand-page .container .icons img {
+    cursor: pointer;
+    transition: 0.5s;
+}
+
+.secand-page .container .icons img:hover {
+    transform: translate(0px, -10px)
+}
+
+
+/* Small */
+
+@media(max-width:992px) {
+    .secand-page .container {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+    }
+    .secand-page .container .head {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        text-align: center;
+        justify-content: center;
+    }
+    .secand-page .container .head h3 {
+        text-align: center;
+        font-weight: bold;
+    }
+    .secand-page .container .head p {
+        text-align: center;
+        margin-top: 20px;
+    }
+    .secand-page .container .icons {
+        display: flex;
+        flex-direction: column;
+    }
+    .secand-page .container .icons p {
+        width: 250px;
+    }
+}
+
+
+/* End Secand Page */
+
+
+/* Start Third Page */
+
+.products .container .row {
+    margin-top: 50px;
+    margin-bottom: 50px;
+}
+
+.products .container .head {
+    letter-spacing: 5px;
+    font-size: 40px;
+    font-weight: bold;
+    color: rgb(65, 63, 63);
+}
+
+.row img {
+    border-radius: 50%;
+    box-shadow: 5px 5px 50px rgb(200, 161, 228);
+    cursor: pointer;
+    transition: 0.5s;
+}
+
+.row img:hover {
+    transform: translate(0px, -10px);
+    box-shadow: 5px 5px 50px rgb(106, 0, 182);
+}
+
+.row h3:hover {
+    background-color: rgb(149, 35, 255);
+}
+
+.row h3 {
+    background-color: rgb(200, 161, 228);
+    width: 100px;
+    border-radius: 10px;
+    margin-left: 100px;
+    font-weight: bold;
+    color: white;
+    cursor: pointer;
+}
+
+.third-page .row h4 {
+    font-size: 20px;
+    font-family: cursive;
+    font-weight: bold;
+}
+
+@media(max-width:990px) {
+    .third-page .products .containe {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        text-align: center;
+        justify-content: space-evenly;
+    }
+    .third-page .container .row {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        text-align: center;
+        justify-content: center;
+        margin-top: 0px;
+        margin-bottom: 0px;
+    }
+    .third-page .container .row div {
+        text-align: center;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+    }
+    .row img {
+        border-radius: 50%;
+        box-shadow: 5px 5px 50px rgb(200, 161, 228);
+        cursor: pointer;
+        transition: 0.5s;
+        width: 200px;
+        height: 200px;
+        margin-top: 20px;
+    }
+    .row h4 {
+        width: 200px;
+    }
+    .row h3 {
+        margin-left: 10px;
+        margin-bottom: 50px;
+    }
+}
+
+
+/* End Third Page */
+
+
+/* Strat Fourth Page */
+
+.fourth-page {
+    width: 100%;
+    background-color: lightgray;
+}
+
+.fourth-page .container .head h3 {
+    font-size: 18px;
+}
+
+.fourth-page .container .head p {
+    width: 550px;
+    font-size: 30px;
+    font-weight: bold;
+    color: white;
+    font-family: monospace;
+}
+
+.fourth-page .container .icons img {
+    transition: 0.3s;
+}
+
+.fourth-page .container .icons img:hover {
+    transform: translate(0, -10px);
+}
+
+@media(max-width:767px) {
+    .fourth-page .container .head p {
+        width: 350px;
+    }
+    .fourth-page .container .icons {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+    }
+}
+
+
+/* End Pourth Page */
+
+
+/* Start Footer */
+
+footer {
+    background-color: #333;
+    color: white;
+}
+
+footer .container ul li a {
+    color: white;
+}
+
+footer .container ul li a:hover {
+    color: rgb(200, 161, 228);
+}
+
+footer .container {
+    margin: auto;
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+}
+
+footer .container .about,
+footer .container .Information,
+footer .container .Support,
+footer .container .Help {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+
+footer .container .about h4,
+footer .container .Information h4,
+footer .container .Support h4,
+footer .container .Help h4 {
+    color: rgb(200, 161, 228);
+    transition: 0.5s;
+}
+
+footer .container .about h4:hover,
+footer .container .Information h4:hover,
+footer .container .Support h4:hover,
+footer .container .Help h4:hover {
+    transform: translate(0, -10px);
+    cursor: pointer;
+}
+
+.copyrights {
+    width: 100%;
+    height: 50px;
+    background-color: gray;
+    color: white;
+}
+
+@media(max-width:766px) {
+    footer .container {
+        width: 100%;
+        display: flex;
+        flex-direction: column;
+        justify-content: flex-start;
+        align-items: flex-start;
+    }
+    footer .container .about,
+    footer .container .Information,
+    footer .container .Support,
+    footer .container .Help {
+        width: 100%;
+        display: flex;
+        flex-direction: column;
+        justify-content: flex-start;
+        align-items: flex-start;
+    }
+}
+
+
+/* End Footer */

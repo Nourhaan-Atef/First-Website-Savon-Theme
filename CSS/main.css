@@ -252,7 +252,10 @@ h3 {
     transform: translate(0px, -10px)
 }
 
-.skincare h4,
+.skincare h4 {
+    font-family: cursive;
+}
+
 h3 {
     font-family: cursive;
 }

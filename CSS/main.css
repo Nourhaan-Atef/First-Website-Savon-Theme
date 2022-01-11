@@ -13,6 +13,7 @@ body {
     margin: 0;
 }
 
+
 /* Start Header and landing*/
 
 
@@ -22,21 +23,22 @@ header .container .logo {
     cursor: pointer;
 }
 
-.navbar-light .navbar-nav .nav-link{
+.navbar-light .navbar-nav .nav-link {
     color: #222;
     font-size: 22px;
     font-weight: bold;
     font-family: cursive;
 }
-.navbar-light .navbar-nav .nav-link:hover{
-    color: rgb(158, 97, 160);
 
+.navbar-light .navbar-nav .nav-link:hover {
+    color: rgb(158, 97, 160);
 }
-.navbar-light .navbar-nav .nav-link .icon{
+
+.navbar-light .navbar-nav .nav-link .icon {
     font-size: 20px;
     color: #777;
-
 }
+
 
 /* End Header */
 
@@ -57,8 +59,6 @@ i:hover {
     left: 50%;
     transform: translate(-50%, -50%);
     width: 500px;
-    
-
 }
 
 h2 {
@@ -75,17 +75,18 @@ h2 {
     font-size: 18px;
     font-weight: bold;
     color: white;
-    padding:5px 30px;
+    padding: 5px 30px;
     background-color: rgb(168, 76, 172);
     border-radius: 10px;
-    margin: 10px ; 
+    margin: 10px;
     opacity: 0.7;
-
 }
+
 .caption-1 div a:hover,
 .caption-2 div a:hover,
 .caption-3 div a:hover {
-opacity: 1;}
+    opacity: 1;
+}
 
 .caption-2 {
     position: absolute;
@@ -188,10 +189,11 @@ opacity: 1;}
 .secand-page .container .icons img:hover {
     transform: translate(0px, -10px)
 }
-.secand-page h4,h3{
+
+.secand-page h4,
+h3 {
     font-family: cursive;
 }
-
 
 
 /* Small */
@@ -231,6 +233,184 @@ opacity: 1;}
 /* End Secand Page */
 
 
+/* Start Skin Care page */
+
+.skincare {
+    width: 100%;
+}
+
+.skincare .container .icons p {
+    opacity: 0.7;
+}
+
+.skincare .container .icons img {
+    cursor: pointer;
+    transition: 0.5s;
+}
+
+.skincare .container .icons img:hover {
+    transform: translate(0px, -10px)
+}
+
+.skincare h4,
+h3 {
+    font-family: cursive;
+}
+
+.skincare a {
+    text-decoration: none;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.skincare .center {
+    width: 100%;
+}
+
+.skincare .center a h4 {
+    width: 50%;
+    font-size: 20px;
+    font-weight: bold;
+    color: white;
+    padding: 5px 0;
+    background-color: rgb(158, 97, 160);
+    border-radius: 10px;
+    opacity: 0.7;
+    margin: 20px;
+    transition: 0.5s;
+}
+
+.skincare a h4:hover {
+    opacity: 1;
+}
+
+
+/* Small */
+
+@media(max-width:992px) {
+    .skincare .container {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+    }
+    .skincare .container .icons {
+        display: flex;
+        flex-direction: column;
+    }
+}
+
+
+/* End Skin Care Page */
+
+
+/* Start Contact page  */
+
+.contact-page .container-fluid {
+    padding: 50px;
+    text-align: center;
+    background-color: #FAF0E4;
+}
+
+.contact-page .container-fluid p.top {
+    color: #1A1A1A;
+    font-size: 30px;
+    margin: 0 0 10px;
+    font-weight: bold;
+    font-family: cursive;
+    letter-spacing: 1.5px;
+    word-spacing: 2.5px;
+}
+
+.contact-page .container-fluid p.down {
+    color: #6A6A6A;
+    font-size: 16px;
+    margin: 0 130px;
+    font-family: cursive;
+}
+
+.contact-page .container-fluid .container-fluid {
+    width: 100%;
+    text-align: center;
+}
+
+.contact-page .container-fluid input {
+    padding: 8px 10px;
+    width: 40%;
+    border: 1px solid #ebbaa9;
+    outline: none;
+}
+
+.contact-page .container-fluid button {
+    padding: 8px 10px;
+    width: 13%;
+    border: 1px solid #ebaba9;
+    outline: none;
+    background-color: #ebaba9;
+    margin-left: -5px;
+    transition: 0.8s;
+}
+
+.contact-page .container-fluid button:hover {
+    background-color: lightgrey;
+}
+
+@media(max-width:990px) {
+    .contact-page .container-fluid {
+        padding: 30px;
+    }
+    .contact-page .container-fluid p.top {
+        font-size: 25px;
+        letter-spacing: 0.5px;
+        word-spacing: 2.0px;
+    }
+    .contact-page .container-fluid p.down {
+        font-size: 13px;
+        margin: 0 100px;
+    }
+    .contact-page .container-fluid .container-fluid {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+    }
+    .contact-page .container-fluid .container-fluid input {
+        width: 70%;
+    }
+    .contact-page .container-fluid .container-fluid button {
+        margin: 10px 0;
+        width: 30%;
+    }
+}
+
+@media(max-width:500px) {
+    .contact-page .container-fluid p.top {
+        font-size: 20px;
+    }
+    .contact-page .container-fluid p.down {
+        font-size: 13px;
+        margin: 0 60px;
+    }
+    .contact-page .container-fluid .container-fluid {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+    }
+    .contact-page .container-fluid .container-fluid input {
+        width: 100%;
+    }
+    .contact-page .container-fluid .container-fluid button {
+        margin: 10px 0;
+        width: 50%;
+    }
+}
+
+
+/* End Contact Page */
+
+
 /* Start Third Page */
 
 .products .container .row {
@@ -238,10 +418,10 @@ opacity: 1;}
     margin-bottom: 50px;
 }
 
-.products h3.head{
+.products h3.head {
     font-family: cursive;
-
 }
+
 .products .container .head {
     letter-spacing: 5px;
     font-size: 40px;
@@ -258,22 +438,32 @@ opacity: 1;}
 
 .row img:hover {
     transform: translate(0px, -10px);
-    box-shadow: 5px 5px 50px rgb(106, 0, 182);
+    box-shadow: 5px 5px 50px rgb(158, 97, 160);
 }
 
-.row h3:hover {
-    background-color: rgb(149, 35, 255);
+.row .center h3:hover {
+    opacity: 1;
+    cursor: pointer;
 }
 
-.row h3 {
-    background-color: rgb(200, 161, 228);
-    width: 100px;
-    border-radius: 10px;
-    margin-left: 100px;
+.row .center {
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.row .center h3 {
+    width: 50%;
+    font-size: 20px;
     font-weight: bold;
     color: white;
-    cursor: pointer;
-    
+    padding: 5px 0;
+    background-color: rgb(158, 97, 160);
+    border-radius: 10px;
+    opacity: 0.7;
+    margin: 20px;
+    transition: 0.5s;
 }
 
 .third-page .row h4 {
@@ -327,105 +517,6 @@ opacity: 1;}
 
 /* End Third Page */
 
-/* Start Contact page  */
-/* End Contact Page */
-.contact-page .container-fluid {
-    padding: 50px;
-    text-align:center;
-    background-color: #FAF0E4;
-}
-.contact-page .container-fluid p.top{
-    color: #1A1A1A;
-    font-size: 30px;
-    margin: 0 0 10px;
-    font-weight: bold;
-    font-family: cursive;
-    letter-spacing: 1.5px;
-    word-spacing: 2.5px;
-}
-.contact-page .container-fluid p.down{
-    color: #6A6A6A;
-    font-size: 16px;
-    margin: 0 130px;
-    font-family: cursive;
-}
-.contact-page .container-fluid .container-fluid{
-    width: 100%;
-    text-align: center;
-}
-
-.contact-page .container-fluid input{
-  padding: 8px 10px;
-  width: 40%;
-  border: 1px solid #ebbaa9;
-  outline: none;
-}
-.contact-page .container-fluid button{
-    padding: 8px 10px;
-    width: 13%;
-    border: 1px solid #ebaba9;
-    outline: none;
-    background-color: #ebaba9;
-    margin-left: -5px;
-    transition: 0.8s;
-  }
-  .contact-page .container-fluid button:hover{
-      background-color:lightgrey ;
-  }
-  @media(max-width:990px) {
-    .contact-page .container-fluid {
-        padding: 30px;
-    }
-    .contact-page .container-fluid p.top{
-        font-size: 25px;
-        letter-spacing: 0.5px;
-        word-spacing: 2.0px;
-        
-    }
-    .contact-page .container-fluid p.down{
-        font-size: 13px;
-        margin: 0 100px;
-    }
-    .contact-page .container-fluid .container-fluid {
-        display: flex;
-        flex-direction: column;
-        align-items: center;
-         justify-content: center;
-    }
-    .contact-page .container-fluid .container-fluid input{
-        width: 70%;
-    }
-    .contact-page .container-fluid .container-fluid button{
-        margin: 10px 0;
-        width: 30%;
-    }
-
-  
-
-  }
-  @media(max-width:500px) {
-    .contact-page .container-fluid p.top{
-        font-size: 20px;
-    }
-    .contact-page .container-fluid p.down{
-        font-size: 13px;
-        margin: 0 60px;
-    }
-    .contact-page .container-fluid .container-fluid {
-        display: flex;
-        flex-direction: column;
-        align-items: center;
-         justify-content: center;
-    }
-    .contact-page .container-fluid .container-fluid input{
-        width: 100%;
-    }
-   
-    .contact-page .container-fluid .container-fluid button{
-        margin: 10px 0;
-        width: 50%;
-    }
-  }
 
 /* Strat Fourth Page */
 
@@ -511,8 +602,6 @@ footer .container .Help h4 {
     transition: 0.5s;
     font-family: cursive;
     line-height: 2;
-
-  
 }
 
 footer .container .about h4:hover,

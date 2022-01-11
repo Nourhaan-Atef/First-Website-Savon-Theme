@@ -185,69 +185,6 @@ h2 {
 /* End Header and landing */
 
 
-/* Start Secand page */
-
-.secand-page {
-    width: 100%;
-    background-color: #FAF0E4;
-}
-
-.secand-page container .icons p {
-    width: 200px;
-}
-
-.secand-page .container .icons img {
-    cursor: pointer;
-    transition: 0.5s;
-}
-
-.secand-page .container .icons img:hover {
-    transform: translate(0px, -10px)
-}
-
-.secand-page h4,
-h3 {
-    font-family: cursive;
-}
-
-
-/* Small */
-
-@media(max-width:992px) {
-    .secand-page .container {
-        display: flex;
-        flex-direction: column;
-        justify-content: center;
-        align-items: center;
-    }
-    .secand-page .container .head {
-        display: flex;
-        flex-direction: column;
-        align-items: center;
-        text-align: center;
-        justify-content: center;
-    }
-    .secand-page .container .head h3 {
-        text-align: center;
-        font-weight: bold;
-    }
-    .secand-page .container .head p {
-        text-align: center;
-        margin-top: 20px;
-    }
-    .secand-page .container .icons {
-        display: flex;
-        flex-direction: column;
-    }
-    .secand-page .container .icons p {
-        width: 250px;
-    }
-}
-
-
-/* End Secand Page */
-
-
 /* Start Skin Care page */
 
 .skincare {
@@ -323,110 +260,73 @@ h3 {
 /* End Skin Care Page */
 
 
-/* Start Contact page  */
+/* Start Secand page */
 
-.contact-page .container-fluid {
-    padding: 50px;
-    text-align: center;
+.secand-page {
+    width: 100%;
     background-color: #FAF0E4;
 }
 
-.contact-page .container-fluid p.top {
-    color: #1A1A1A;
-    font-size: 30px;
-    margin: 0 0 10px;
-    font-weight: bold;
+.secand-page container .icons p {
+    width: 200px;
+}
+
+.secand-page .container .icons img {
+    cursor: pointer;
+    transition: 0.5s;
+}
+
+.secand-page .container .icons img:hover {
+    transform: translate(0px, -10px)
+}
+
+.secand-page h4,
+h3 {
     font-family: cursive;
-    letter-spacing: 1.5px;
-    word-spacing: 2.5px;
 }
 
-.contact-page .container-fluid p.down {
-    color: #6A6A6A;
-    font-size: 16px;
-    margin: 0 130px;
-    font-family: cursive;
-}
 
-.contact-page .container-fluid .container-fluid {
-    width: 100%;
-    text-align: center;
-}
+/* Small */
 
-.contact-page .container-fluid input {
-    padding: 8px 10px;
-    width: 40%;
-    border: 1px solid #ebbaa9;
-    outline: none;
-}
-
-.contact-page .container-fluid button {
-    padding: 8px 10px;
-    width: 13%;
-    border: 1px solid #ebaba9;
-    outline: none;
-    background-color: #ebaba9;
-    margin-left: -5px;
-    transition: 0.8s;
-}
-
-.contact-page .container-fluid button:hover {
-    background-color: lightgrey;
-}
-
-@media(max-width:990px) {
-    .contact-page .container-fluid {
-        padding: 30px;
+@media(max-width:992px) {
+    .secand-page .container {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
     }
-    .contact-page .container-fluid p.top {
-        font-size: 25px;
-        letter-spacing: 0.5px;
-        word-spacing: 2.0px;
-    }
-    .contact-page .container-fluid p.down {
-        font-size: 13px;
-        margin: 0 100px;
-    }
-    .contact-page .container-fluid .container-fluid {
+    .secand-page .container .head {
         display: flex;
         flex-direction: column;
         align-items: center;
+        text-align: center;
         justify-content: center;
     }
-    .contact-page .container-fluid .container-fluid input {
-        width: 70%;
+    .secand-page .container .head h3 {
+        text-align: center;
+        font-weight: bold;
     }
-    .contact-page .container-fluid .container-fluid button {
-        margin: 10px 0;
-        width: 30%;
+    .secand-page .container .head p {
+        text-align: center;
+        margin-top: 20px;
     }
-}
-
-@media(max-width:500px) {
-    .contact-page .container-fluid p.top {
-        font-size: 20px;
-    }
-    .contact-page .container-fluid p.down {
-        font-size: 13px;
-        margin: 0 60px;
-    }
-    .contact-page .container-fluid .container-fluid {
+    .secand-page .container .icons {
         display: flex;
         flex-direction: column;
-        align-items: center;
-        justify-content: center;
     }
-    .contact-page .container-fluid .container-fluid input {
-        width: 100%;
+    .secand-page .container .icons p {
+        width: 250px;
     }
-    .contact-page .container-fluid .container-fluid button {
-        margin: 10px 0;
-        width: 50%;
+    .secand-page .container .icons .first-icon,
+    .secand-page .container .icons .secand-icon,
+    .secand-page .container .icons .third-icon,
+    .secand-page .container .icons .fourth-icon {
+        margin-top: 25px;
     }
 }
 
 
-/* End Contact Page */
+/* End Secand Page */
 
 
 /* Start Third Page */
@@ -577,6 +477,112 @@ h3 {
 
 
 /* End Pourth Page */
+
+
+/* Start Contact page  */
+
+.contact-page .container-fluid {
+    padding: 50px;
+    text-align: center;
+    background-color: #FAF0E4;
+}
+
+.contact-page .container-fluid p.top {
+    color: #1A1A1A;
+    font-size: 30px;
+    margin: 0 0 10px;
+    font-weight: bold;
+    font-family: cursive;
+    letter-spacing: 1.5px;
+    word-spacing: 2.5px;
+}
+
+.contact-page .container-fluid p.down {
+    color: #6A6A6A;
+    font-size: 16px;
+    margin: 0 130px;
+    font-family: cursive;
+}
+
+.contact-page .container-fluid .container-fluid {
+    width: 100%;
+    text-align: center;
+}
+
+.contact-page .container-fluid input {
+    padding: 8px 10px;
+    width: 40%;
+    border: 1px solid #ebbaa9;
+    outline: none;
+}
+
+.contact-page .container-fluid button {
+    padding: 8px 10px;
+    width: 13%;
+    border: 1px solid #ebaba9;
+    outline: none;
+    background-color: #ebaba9;
+    margin-left: -5px;
+    transition: 0.8s;
+}
+
+.contact-page .container-fluid button:hover {
+    background-color: lightgrey;
+}
+
+@media(max-width:990px) {
+    .contact-page .container-fluid {
+        padding: 30px;
+    }
+    .contact-page .container-fluid p.top {
+        font-size: 25px;
+        letter-spacing: 0.5px;
+        word-spacing: 2.0px;
+    }
+    .contact-page .container-fluid p.down {
+        font-size: 13px;
+        margin: 0 100px;
+    }
+    .contact-page .container-fluid .container-fluid {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+    }
+    .contact-page .container-fluid .container-fluid input {
+        width: 70%;
+    }
+    .contact-page .container-fluid .container-fluid button {
+        margin: 10px 0;
+        width: 30%;
+    }
+}
+
+@media(max-width:500px) {
+    .contact-page .container-fluid p.top {
+        font-size: 20px;
+    }
+    .contact-page .container-fluid p.down {
+        font-size: 13px;
+        margin: 0 60px;
+    }
+    .contact-page .container-fluid .container-fluid {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+    }
+    .contact-page .container-fluid .container-fluid input {
+        width: 100%;
+    }
+    .contact-page .container-fluid .container-fluid button {
+        margin: 10px 0;
+        width: 50%;
+    }
+}
+
+
+/* End Contact Page */
 
 
 /* Start Footer */

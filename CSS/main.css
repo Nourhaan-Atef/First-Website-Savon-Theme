@@ -36,7 +36,7 @@ header .container .logo {
 
 .navbar-light .navbar-nav .nav-link .icon {
     font-size: 20px;
-    color: #777;
+    color: #222;
 }
 
 
@@ -62,7 +62,7 @@ i:hover {
 }
 
 h2 {
-    font-size: 50px;
+    font-size: 45px;
     font-weight: bold;
     letter-spacing: 3px;
     font-family: cursive;
@@ -116,6 +116,22 @@ h2 {
     display: none;
 }
 
+.carousel-control-next-icon,
+.carousel-control-prev-icon {
+    height: 40px;
+    width: 40px;
+    opacity: 1;
+    background-color: rgb(158, 97, 160);
+    border-radius: 50%;
+}
+
+.carousel-control-next,
+.carousel-control-next:hover,
+.carousel-control-prev,
+.carousel-control-prev:hover {
+    opacity: 1;
+}
+
 @media(max-width:776px) {
     #carouselExampleControls {
         display: none;
@@ -144,22 +160,21 @@ h2 {
         background-repeat: no-repeat;
         display: flex;
         flex-direction: column;
-        justify-content: space-evenly;
+        justify-content: center;
         align-items: center;
+        gap: 50px;
     }
     h2 {
-        font-size: 50px;
+        font-size: 40px;
         font-weight: bold;
         letter-spacing: 3px;
-        color: rgb(65, 63, 63);
     }
     .landing div a {
         text-decoration: none;
-        font-size: 20px;
+        font-size: 16px;
         font-weight: bold;
         color: white;
-        padding-left: 30px;
-        padding-right: 30px;
+        padding: 5px 30px;
         margin-left: 10px;
         background-color: rgb(158, 97, 160);
         border-radius: 10px;
@@ -620,6 +635,10 @@ footer .container .Help h4:hover {
     height: 50px;
     background-color: gray;
     color: white;
+}
+
+.copyrights span {
+    color: #ebaba9;
 }
 
 @media(max-width:766px) {

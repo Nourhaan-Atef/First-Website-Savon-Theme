@@ -24,6 +24,15 @@ body {
 
 /* Start Header */
 
+header {
+    position: sticky;
+    top: 0px;
+    z-index: 10;
+    background-color: white;
+    box-shadow: 5px 5px 25px rgb(200, 161, 228);
+    padding: 10px 0;
+}
+
 header .container .logo {
     cursor: pointer;
 }

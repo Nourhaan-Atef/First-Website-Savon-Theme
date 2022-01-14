@@ -1,3 +1,8 @@
+:root {
+    --DarkPurble: rgb(158, 97, 160);
+    --mainFont: cursive;
+}
+
 * {
     -webkit-box-sizing: border-box;
     -moz-box-sizing: border-box;
@@ -27,11 +32,11 @@ header .container .logo {
     color: #222;
     font-size: 22px;
     font-weight: bold;
-    font-family: cursive;
+    font-family: var(--mainFont);
 }
 
 .navbar-light .navbar-nav .nav-link:hover {
-    color: rgb(158, 97, 160);
+    color: var(--DarkPurble);
 }
 
 .navbar-light .navbar-nav .nav-link .icon {
@@ -48,7 +53,7 @@ a.link {
 
 a.link:hover,
 i:hover {
-    color: rgb(158, 97, 160);
+    color: var(--DarkPurble);
     cursor: pointer;
 }
 
@@ -65,7 +70,7 @@ h2 {
     font-size: 45px;
     font-weight: bold;
     letter-spacing: 3px;
-    font-family: cursive;
+    font-family: var(--mainFont);
 }
 
 .caption-1 div a,
@@ -121,7 +126,7 @@ h2 {
     height: 40px;
     width: 40px;
     opacity: 1;
-    background-color: rgb(158, 97, 160);
+    background-color: var(--DarkPurble);
     border-radius: 50%;
 }
 
@@ -176,7 +181,7 @@ h2 {
         color: white;
         padding: 5px 30px;
         margin-left: 10px;
-        background-color: rgb(158, 97, 160);
+        background-color: var(--DarkPurble);
         border-radius: 10px;
     }
 }
@@ -204,12 +209,9 @@ h2 {
     transform: translate(0px, -10px)
 }
 
-.skincare h4 {
-    font-family: cursive;
-}
-
+.skincare h4,
 h3 {
-    font-family: cursive;
+    font-family: var(--mainFont);
 }
 
 .skincare a {
@@ -229,7 +231,7 @@ h3 {
     font-weight: bold;
     color: white;
     padding: 5px 0;
-    background-color: rgb(158, 97, 160);
+    background-color: var(--DarkPurble);
     border-radius: 10px;
     opacity: 0.7;
     margin: 20px;
@@ -282,7 +284,7 @@ h3 {
 
 .secand-page h4,
 h3 {
-    font-family: cursive;
+    font-family: var(--mainFont);
 }
 
 
@@ -337,7 +339,7 @@ h3 {
 }
 
 .products h3.head {
-    font-family: cursive;
+    font-family: var(--mainFont);
 }
 
 .products .container .head {
@@ -356,7 +358,7 @@ h3 {
 
 .row img:hover {
     transform: translate(0px, -10px);
-    box-shadow: 5px 5px 50px rgb(158, 97, 160);
+    box-shadow: 5px 5px 50px var(--DarkPurble);
 }
 
 .row .center h3:hover {
@@ -377,7 +379,7 @@ h3 {
     font-weight: bold;
     color: white;
     padding: 5px 0;
-    background-color: rgb(158, 97, 160);
+    background-color: var(--DarkPurble);
     border-radius: 10px;
     opacity: 0.7;
     margin: 20px;
@@ -386,7 +388,7 @@ h3 {
 
 .third-page .row h4 {
     font-size: 20px;
-    font-family: cursive;
+    font-family: var(--mainFont);
     font-weight: bold;
 }
 
@@ -492,7 +494,7 @@ h3 {
     font-size: 30px;
     margin: 0 0 10px;
     font-weight: bold;
-    font-family: cursive;
+    font-family: var(--mainFont);
     letter-spacing: 1.5px;
     word-spacing: 2.5px;
 }
@@ -501,7 +503,7 @@ h3 {
     color: #6A6A6A;
     font-size: 16px;
     margin: 0 130px;
-    font-family: cursive;
+    font-family: var(--mainFont);
 }
 
 .contact-page .container-fluid .container-fluid {
@@ -624,7 +626,7 @@ footer .container .Support h4,
 footer .container .Help h4 {
     color: rgb(200, 161, 228);
     transition: 0.5s;
-    font-family: cursive;
+    font-family: var(--mainFont);
     line-height: 2;
 }
 
